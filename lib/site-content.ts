@@ -47,27 +47,27 @@ export const capabilitiesContent = {
   cards: [
     {
       title: "See what is really happening",
-      body: "Bring together data, tools, workflows, and on-the-ground context into a clear, usable view of the business.",
+      body: "Pull what's in your tools, your spreadsheets, and the day-to-day realities your team never writes down into one view of how the business is actually running. Not just what the dashboards say.",
       icon: "Eye",
     },
     {
       title: "Evaluate trade-offs clearly",
-      body: "Compare options across growth, margin, speed, risk, and capacity before acting.",
+      body: "Before committing to a direction, see exactly what you're giving up. Revenue vs. speed, margin vs. headcount, short-term fixes vs. long-term position.",
       icon: "Scale",
     },
     {
       title: "Generate better strategies and tactics",
-      body: "Surface stronger options for what to change, where to focus, and how to operate differently.",
+      body: "Get concrete options for what to change, what to stop, and where to focus. Grounded in your actual situation, not generic frameworks.",
       icon: "GitBranch",
     },
     {
       title: "Turn decisions into real operating changes",
-      body: "Translate choices into workflows, approvals, and ways of working across teams and systems.",
+      body: "Convert a decision into the actual changes needed. Updated workflows, new approval steps, and clear ownership across every team that has to move.",
       icon: "ArrowRightLeft",
     },
     {
       title: "Improve over time",
-      body: "Learn from outcomes so the business can make stronger decisions and improve how it operates over time.",
+      body: "Track what you decided and what actually happened. So each next decision is sharper and built on real experience instead of guesswork.",
       icon: "RefreshCw",
       fullWidth: true,
     },
