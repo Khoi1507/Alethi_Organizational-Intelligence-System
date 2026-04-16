@@ -21,7 +21,7 @@ export async function submitDemoRequest(data: FormData) {
   const { Resend } = await import("resend");
   const resend = new Resend(apiKey);
 
-  await resend.emails.send({
+  const result = await resend.emails.send({
     from: "Alethi Demo Request <onboarding@resend.dev>",
     to: [toEmail],
     subject: `Demo request from ${name} at ${company}`,
@@ -38,4 +38,9 @@ Current tools:
 ${tools}
     `.trim(),
   });
+
+  if (result.error) {
+    console.error("Resend error:", JSON.stringify(result.error));
+    throw new Error(`Resend: ${result.error.message ?? JSON.stringify(result.error)}`);
+  }
 }

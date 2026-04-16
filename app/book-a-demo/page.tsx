@@ -51,9 +51,9 @@ export default function BookADemoPage() {
     try {
       await submitDemoRequest(formData);
       setStatus("success");
-    } catch {
+    } catch (err) {
       setStatus("error");
-      setErrorMsg("Something went wrong. Please try again.");
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong. Please try again.");
     }
   }
 
