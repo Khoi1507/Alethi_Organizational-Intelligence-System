@@ -3,23 +3,23 @@ import { FragmentationVisual } from "@/components/visuals/fragmentation-visual";
 
 const questions = [
   {
-    q: "What should we do next?",
-    body: "Leaders face competing signals from every direction but no system that connects them to a clear, ranked set of actions.",
+    q: "We have more data than ever. Why are decisions still this hard?",
+    body: "Information lives across ten tools, three spreadsheets, and everyone's head. By the time you've pieced it together, the moment has passed.",
     color: "#5DDFF0",
   },
   {
-    q: "Which option is actually better?",
-    body: "Without a structured way to compare options, choices default to intuition, politics, or whoever speaks loudest in the room.",
+    q: "Everyone has an opinion. How do we know which direction is actually right?",
+    body: "When options can't be compared on the same terms, the decision goes to whoever speaks loudest. Not whoever's right.",
     color: "#7C9BFF",
   },
   {
-    q: "Which trade-offs are worth making?",
-    body: "Every decision involves trade-offs across growth, margin, speed, and risk — but most teams never make them explicit before acting.",
+    q: "We made the call. Why isn't anything actually changing?",
+    body: "The gap between deciding and doing is where most strategies die. Good decisions don't automatically become new ways of working.",
     color: "#A882FF",
   },
   {
-    q: "How should the business run differently?",
-    body: "Even when the right call is made, translating it into real operating change across teams and systems rarely happens cleanly.",
+    q: "Why do we keep running into the same problems?",
+    body: "Without tracking what you decided and what actually happened, there's no way to get sharper. The same issues come back on a different day.",
     color: "#FFB86B",
   },
 ];
