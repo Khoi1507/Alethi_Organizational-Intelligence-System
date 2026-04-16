@@ -51,14 +51,14 @@ export const capabilitiesContent = {
       icon: "Eye",
     },
     {
-      title: "Generate better strategies and tactics",
-      body: "Surface stronger options for what to change, where to focus, and how to operate differently.",
-      icon: "GitBranch",
-    },
-    {
       title: "Evaluate trade-offs clearly",
       body: "Compare options across growth, margin, speed, risk, and capacity before acting.",
       icon: "Scale",
+    },
+    {
+      title: "Generate better strategies and tactics",
+      body: "Surface stronger options for what to change, where to focus, and how to operate differently.",
+      icon: "GitBranch",
     },
     {
       title: "Turn decisions into real operating changes",
