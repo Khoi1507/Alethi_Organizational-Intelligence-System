@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Fonts */
+  --font-heading: var(--font-manrope);
+  --font-body: var(--font-inter);
+
+  /* Background scale — lifted for more light */
+  --color-navy: #0A1628;
+  --color-base: #0F1E34;
+  --color-panel: #132240;
+
+  /* Surface scale — more visible surfaces */
+  --color-card: #1A2E48;
+  --color-card-lift: #203554;
+  --color-rim: #2E4A70;
+
+  /* Text scale — brighter mid-tones */
+  --color-ink: #F7FAFD;
+  --color-ink-dim: #DCE8F5;
+  --color-ink-faint: #AABFD8;
+
+  /* Accent / signal colors — more vivid */
+  --color-accent-cyan: #5DDFF0;
+  --color-accent-blue: #7C9BFF;
+  --color-accent-violet: #A882FF;
+  --color-accent-green: #3DD99F;
+  --color-accent-amber: #FFB86B;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0A1628;
+  color: #F7FAFD;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading, 'Space Grotesk', sans-serif);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #5DDFF0 0%, #7C9BFF 50%, #A882FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gradient border card — wraps card with a 1px gradient inset border */
+.gradient-border-card {
+  position: relative;
+  background: #1A2E48;
+  border-radius: 1rem;
+}
+.gradient-border-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #5DDFF0 0%, #7C9BFF 50%, #A882FF 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Section contrast accent — used on dark bg panels */
+.section-accent-top {
+  border-top: 1px solid rgba(93, 223, 240, 0.12);
+}
+
+/* Sticky nav glass effect */
+.glass-nav {
+  background: rgba(10, 22, 40, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(46, 74, 112, 0.5);
+}
